@@ -15,7 +15,7 @@ class PopularPlaces extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SectionTitle(
+        SectionTitle( 
           title: "Right Now At Spark",
           press: () {},
         ),

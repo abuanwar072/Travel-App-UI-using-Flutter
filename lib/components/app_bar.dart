@@ -14,7 +14,7 @@ AppBar buildAppBar(BuildContext context,
       ),
       onPressed: () {},
     ),
-    title: !isTransparent
+    title: ! isTransparent
         ? Text(
             isTransparent ? "" : title,
             style: TextStyle(color: kTextColor),
