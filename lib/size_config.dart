@@ -28,3 +28,20 @@ double getProportionateScreenWidth(double inputWidth) {
   // 414 is the layout width that designer use or you can say iPhone 11 Pro width
   return (inputWidth / 414.0) * screenWidth;
 }
+
+// For add free space vertically
+class VerticalSpacing extends StatelessWidget {
+  const VerticalSpacing({
+    Key key,
+    this.of = 25,
+  }) : super(key: key);
+
+  final double of;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: getProportionateScreenHeight(of),
+    );
+  }
+}
